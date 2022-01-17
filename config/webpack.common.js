@@ -38,7 +38,7 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'vlad-js',
-      favicon: paths.src + '/images/favicon.png',
+      favicon: paths.src + '/images/excel.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
@@ -47,6 +47,7 @@ module.exports = {
   // Determine how modules within the project are treated
   module: {
     rules: [
+      
       // JavaScript: Use Babel to transpile JavaScript files
       { test: /\.js$/, use: ['babel-loader'] },
 
@@ -55,6 +56,8 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+
+     
     ],
   },
 

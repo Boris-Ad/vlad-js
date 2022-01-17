@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.excel__toolbar{
+  position: absolute;
+  top: $header-height;
+  width: 100%;
+  height: $toolbar-height;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 7px 10px;
+
+  .align-left {
+    @include svg-button(red,'images/toolbar-svg/format_align_left_black_24dp.svg')
+    
+  }
+  .align-center {
+    @include svg-button(red,'images/toolbar-svg/format_align_center_black_24dp.svg')
+    
+  }
+  .align-right {
+    @include svg-button(red,'images/toolbar-svg/format_align_right_black_24dp.svg')
+    
+  }
+  .bold {
+    @include svg-button(red,'images/toolbar-svg/format_bold_black_24dp.svg')
+    
+  }
+  .italic {
+    @include svg-button(red,'images/toolbar-svg/format_italic_black_24dp.svg')
+    
+  }
+  .underlined {
+    @include svg-button(red,'images/toolbar-svg/format_underlined_black_24dp.svg')
+    
+  }
+}

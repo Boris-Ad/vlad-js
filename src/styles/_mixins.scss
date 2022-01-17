@@ -1,0 +1,27 @@
+
+
+@mixin svg-button($color, $url-image) {
+  min-width: 24px;
+  height: 24px;
+  padding: 3px;
+  display: inline-block;
+  mask-image: url($url-image);
+  mask-size: cover;
+  background-color: green;
+
+  &:hover {
+    background-color: $border-color;
+    cursor: pointer;
+  }
+
+  &:active,
+  .active {
+    background-color: $color;
+  }
+}
+
+@mixin clear-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

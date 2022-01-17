@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+
+.excel__header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  padding: 8px 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .input {
+    margin: 0;
+    padding: 1px 7px;
+    color: #000;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 22;
+    outline: none;
+    box-sizing: content-box;
+
+    &:hover{
+      border: 1px solid $border-color;
+    }
+
+    &:focus{
+      border: 1px solid #1a73e8;
+      
+    }
+   
+  }
+
+  .delete {
+    @include svg-button(red,'images/header-svg/delete_forever_black_24dp.svg')
+    
+  }
+  .exit {
+    @include svg-button(red,'images/header-svg/exit_to_app_black_24dp.svg')
+    
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="excel">
+          <div class="excel__header">
+            <div>
+              <input type="text" class="input" placeholder="Новая таблица" />
+            </div>
+            <ul>
+              <li class="exit"></li>
+              <li class="delete"></li>
+            </ul>
+          </div>
+          <div class="excel__toolbar">
+            <ul>
+              <li class="align-left"></li>
+              <li class="align-center"></li>
+              <li class="align-right"></li>
+              <li class="bold"></li>
+              <li class="italic"></li>
+              <li class="underlined"></li>
+            </ul>
+          </div>
+          <div class="excel__formula">
+            <div class="info">fx</div>
+            <div class="input" contenteditable spellcheck="false"></div>
+          </div>
+          <div class="excel__table">
+            <div class="row">
+              <div class="row-info"></div>
+              <div class="row-data">
+                <div class="column">A</div>
+                <div class="column">B</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-info">1</div>
+              <div class="row-data">
+               <div class="cell selected" contenteditable>1</div>
+               <div class="cell" contenteditable>2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
